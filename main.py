@@ -17,3 +17,15 @@ if __name__=="__main__":
             print("Welcome to BOiL")
 
     window.close()
+
+
+
+class Info:
+    ilosc_srodkow_produkcji = 0
+    ograniczenia_ilosci_srodkow_produkcji = 0
+
+class Produkt:
+    ilosc_srodkow_produkcji_na_wyrob = 0
+    zyski_jednostkowe = 0
+    ograniczenia_ilosci_poszczegolnych_wyrobow = 0
+
