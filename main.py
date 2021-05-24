@@ -87,7 +87,7 @@ if __name__=="__main__":
 
         print("Zyski: "+ str(testowy_produkt.zyski_jednostkowe))
         print("Ograniczenie ilosci: " + str(testowy_produkt.ograniczenia_ilosci_poszczegolnych_wyrobow))
-        print("Zyski: " + str(testowy_produkt.ilosc_srodkow_produkcji_na_wyrob))
+        print("Ilosc materialow na wyrob: " + str(testowy_produkt.ilosc_srodkow_produkcji_na_wyrob))
 
 
 
