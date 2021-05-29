@@ -1,7 +1,16 @@
 import PySimpleGUI as GUI
+import numpy as np
 import klasy
 if __name__=="__main__":
 
+    #TEST:
+    zyski = np.array([1800., 2400., 3000.])
+    czas_pracy = np.array([[5., 3., 1.], [1., 2., 4.]])
+    limit_pieca = np.array([36000., 48000.])
+    ograniczenia = [(0.0, 200.0), (0.0, 120.0), (0.0, 60.0)]
+
+    #działa -----> PRZYKŁAD: http://delibra.bg.polsl.pl/Content/29220/BCPS_32889_-_Optymalny-dobor-asor_0000.pdf
+    print(klasy.optymalizuj(zyski * (-1.0), czas_pracy, limit_pieca, ograniczenia))
     #do okreslenia czy program ma dalej dzialac
     flag=True
 
