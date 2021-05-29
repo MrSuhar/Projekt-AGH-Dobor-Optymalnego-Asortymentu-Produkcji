@@ -1,8 +1,11 @@
 from scipy.optimize import linprog
 import numpy as np
+
+
 class Info:
     ilosc_srodkow_produkcji = 0
     ograniczenia_ilosci_srodkow_produkcji = 0
+    zysk_calkowity = 0
 
 
 class Produkt:
@@ -12,11 +15,7 @@ class Produkt:
 
 
 def optymalizuj(zyski, czas_pracy, limit_pieca, ograniczenia):
-    print("Zyski : " + zyski)
-    print("Czas pracy: " + czas_pracy)
-    print("Limit pracy pieca h/1szt odlewu: " + limit_pieca)
-    print("Ograniczenia : " + ograniczenia)
-
+    zyski = zyski * (-1.0)
     srodki_produkcji = []
     zysk_calkowity = 0
 
@@ -34,4 +33,9 @@ def optymalizuj(zyski, czas_pracy, limit_pieca, ograniczenia):
 
         zysk_calkowity = (wynik.fun * (-1))
 
-        return ilosc_wyrobow, srodki_produkcji, zysk_calkowity
+        info = Info()
+        info.ilosc_srodkow_produkcji = srodki_produkcji
+        info.ograniczenia_ilosci_srodkow_produkcji = ilosc_wyrobow
+        info.zysk_calkowity = zysk_calkowity
+
+        return info
