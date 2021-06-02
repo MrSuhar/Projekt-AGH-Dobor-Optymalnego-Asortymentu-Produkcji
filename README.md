@@ -4,6 +4,6 @@ PROGRAM ROZWIĄZUJĄCY NASTĘPUJĄCE ZADANIA: </b>
 3. Rozkroje </b>
 </b>
 
-TO DO: </b>
--Zmodyfikować GUI </b>
--Dodać okno z wyświetlaniem wyników </b>
+TO DO: </b></b>
+-Zmodyfikować GUI </b></b>
+-Dodać okno z wyświetlaniem wyników </b></b>
