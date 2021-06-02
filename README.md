@@ -5,5 +5,5 @@ PROGRAM ROZWIĄZUJĄCY NASTĘPUJĄCE ZADANIA: <br/>
 <br/>
 
 TO DO:<br/>
--Zmodyfikować GUI <br/>
+-Zmodyfikować GUI do wprowadzania danych ,aby łączyło się z backend'em <br/>
 -Dodać okno z wyświetlaniem wyników <br/>
