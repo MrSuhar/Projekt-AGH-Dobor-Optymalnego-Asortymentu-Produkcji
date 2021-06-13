@@ -7,10 +7,12 @@ class Info:
     zysk_calkowity = 0
 
 
-class Produkt:
-    ilosc_srodkow_produkcji_na_wyrob = []
+class Produkt:    
     zyski_jednostkowe = 0
-    ograniczenia_ilosci_poszczegolnych_wyrobow = 0
+    ograniczenia=0
+
+#class Srodek_Produkcji:
+
 
 
 def optymalizuj(zyski, czas_pracy, limit_pieca, ograniczenia):
